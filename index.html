@@ -5,12 +5,7 @@
   <script src="marked.js"></script>
   <script src="highlight.pack.js"></script>
   <script src="codemirror/lib/codemirror.js"></script>
-  <script src="codemirror/xml/xml.js"></script>
   <script src="codemirror/markdown/markdown.js"></script>
-  <script src="codemirror/gfm/gfm.js"></script>
-  <script src="codemirror/javascript/javascript.js"></script>
-  <script src="rawinflate.js"></script>
-  <script src="rawdeflate.js"></script>
   <link rel="stylesheet" href="codemirror/lib/codemirror.css">
   <link rel="stylesheet" href="default.css">
   <style>
@@ -22,7 +17,7 @@
       top: 0;
       left: 0;
       bottom: 0;
-      width: 50%;
+      width: 40%;
       overflow: auto;
       font-size: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.2);
@@ -36,7 +31,7 @@
       position: fixed;
       top: 0;
       right: 0;
-      left: 50%;
+      left: 40%;
       bottom: 0;
       overflow: auto;
       padding: 10px;
@@ -112,44 +107,7 @@
   </style>
 </head>
 <body>
-  <div id="in"><form><textarea id="code"># (GitHub-Flavored) Markdown Editor
-
-Basic useful feature list:
-
- * Ctrl/Cmd + S to save the file
- * Drag and drop a file into here to load it
- * File contents are saved in the URL so you can share files
-
-
-I'm no good at writing sample / filler text, so go write something yourself.
-
-Look, a list!
-
- * foo
- * bar
- * baz
-
-And here's some code!
-
-```javascript
-$(function(){
-  $('div').html('I am a div.');
-});
-```
-
-This is [on GitHub](https://github.com/jbt/markdown-editor) so let me know if I've b0rked it somewhere.
-
-
-Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
-the inspiration to this, and some handy implementation hints, came.
-
-### Stuff used to make this:
-
- * [marked](https://github.com/chjj) for Markdown parsing
- * [CodeMirror](http://codemirror.net/) for the awesome syntax-highlighted editor
- * [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for syntax highlighting in output code blocks
- * [js-deflate](https://github.com/dankogai/js-deflate) for gzipping of data to make it fit in URLs
-</textarea></form></div>
+  <div id="in"><form><textarea id="code"></textarea></form></div>
   <div id="out"></div>
 
   <script>
